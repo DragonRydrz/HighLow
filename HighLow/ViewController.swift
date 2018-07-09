@@ -13,6 +13,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let deck = Deck()
+        print(deck.deck)
+        deck.newDeck()
+        for card in deck.deck {
+            print(card.name)
+        }
+        
+        deck.shuffle()
+        print(deck.deck[0].name)
     }
 
 
